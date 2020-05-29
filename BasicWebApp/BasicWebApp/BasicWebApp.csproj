@@ -127,7 +127,16 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Experiment.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Pictures\benign\1.jpg" />
+    <Content Include="Pictures\benign\2.jpg" />
+    <Content Include="Pictures\benign\5.jpg" />
+    <Content Include="Pictures\benign\8.jpg" />
     <Content Include="Pictures\flower.jpg" />
+    <Content Include="Pictures\malignant\110.jpg" />
+    <Content Include="Pictures\malignant\129.jpg" />
+    <Content Include="Pictures\malignant\139.jpg" />
+    <Content Include="Pictures\malignant\156.jpg" />
+    <Content Include="Pictures\malignant\93.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

@@ -3,9 +3,9 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>Skin Cancer</h1>
+        <h1>Skin Cancer Detection and Classification</h1>
         <p class="lead">Skin Cancer is a disease many people suffer from without being aware of, at the initial stages.</p>
-        <p class="">Cancer begins when healthy cells change and grow out of control, forming a mass called a tumor. A tumor can be malignant or benign. </p>
+        <p class="lead">Cancer begins when healthy cells change and grow out of control, forming a mass called a tumor. A tumor can be malignant or benign. </p>
         <p><a href="https://www.cancer.net/cancer-types/skin-cancer-non-melanoma/introduction" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
 
