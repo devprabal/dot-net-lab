@@ -1,9 +1,22 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="BasicWebApp.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h1><%: Title %></h1>
+    <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-0lax{text-align:left;vertical-align:top}
+    </style>
+    
+    <div class="container-fluid">
+
+    <div class="jumbotron text-center mdb-color lighten-2 white-text mx-2 mb-5"><h1><%: Title %></h1></div>
+    
     <div class="jumbotron">
-    <h1>Description</h1>
+    <h1 class="display-4">Description</h1>
     <p class="lead">The site aims to predict whether a certain input image is classified under Malignant, or Benign class of Skin Cancer. The objective is to propose a system that detects skin cancer lesions using the Convolution Neural Network. The diagnosing methodology uses Image processing and deep learning model. The dermoscopy image of skin cancer taken, undergone various techniques to remove the noise and picture resolution.</p>
     </div>
     <br />
@@ -16,55 +29,44 @@
      
     <p>&nbsp;</p>
 
-    <asp:Table ID="Table2" runat="server" Height="123px" Width="567px">
-            <asp:TableRow runat="server">
-                <asp:TableHeaderCell runat="server"><h3>Cancer Image Sample</h3> </asp:TableHeaderCell>
-                <asp:TableHeaderCell runat="server"><h3>Image Classification</h3></asp:TableHeaderCell>
-            </asp:TableRow>
+    <div class="jumbotron">
+        <h1>Sample Classifications</h1>
+        <table class="table table-striped table-dark">
+        <thead>
+          
+        </thead>
+        <tbody>
+            <tr>
+            <th class="tg-0pky"><img src="https://raw.githubusercontent.com/devprabal/dot-net-lab/master/BasicWebApp/BasicWebApp/Pictures/benign/1.jpg" alt="Image"></th>
+            <th class="tg-0pky"><img src="https://raw.githubusercontent.com/devprabal/dot-net-lab/master/BasicWebApp/BasicWebApp/Pictures/benign/2.jpg" alt="Image" ></th>
+            <th class="tg-0pky"><img src="https://raw.githubusercontent.com/devprabal/dot-net-lab/master/BasicWebApp/BasicWebApp/Pictures/benign/5.jpg" alt="Image" ></th>
+            <th class="tg-0pky"><img src="https://raw.githubusercontent.com/devprabal/dot-net-lab/master/BasicWebApp/BasicWebApp/Pictures/benign/8.jpg" alt="Image" ></th>
+            </tr>
+          <tr>
+            <td class="tg-0lax">Benign</td>
+            <td class="tg-0lax">Benign</td>
+            <td class="tg-0lax">Benign</td>
+            <td class="tg-0lax">Benign</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky"><img src="https://raw.githubusercontent.com/devprabal/dot-net-lab/master/BasicWebApp/BasicWebApp/Pictures/malignant/110.jpg" alt="Image" ></td>
+            <td class="tg-0pky"><img src="https://raw.githubusercontent.com/devprabal/dot-net-lab/master/BasicWebApp/BasicWebApp/Pictures/malignant/129.jpg" alt="Image" ></td>
+            <td class="tg-0pky"><img src="https://raw.githubusercontent.com/devprabal/dot-net-lab/master/BasicWebApp/BasicWebApp/Pictures/malignant/139.jpg" alt="Image" ></td>
+            <td class="tg-0pky"><img src="https://raw.githubusercontent.com/devprabal/dot-net-lab/master/BasicWebApp/BasicWebApp/Pictures/malignant/156.jpg" alt="Image" ></td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">Malignant</td>
+            <td class="tg-0pky">Malignant</td>
+            <td class="tg-0pky">Malignant</td>
+            <td class="tg-0pky">Malignant</td>
+          </tr>
+        </tbody>
+        </table>
+    </div>
+    </div>
 
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server"><asp:Image ID="Image1" runat="server" ImageUrl="~/Pictures/benign/1.jpg" /></asp:TableCell>
-                <asp:TableCell runat="server">Benign Class</asp:TableCell>
-             
-            </asp:TableRow>
-            
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server"><asp:Image ID="Image2" runat="server" ImageUrl="~/Pictures/benign/2.jpg" /></asp:TableCell>
-                <asp:TableCell runat="server">Benign Class</asp:TableCell>
-            </asp:TableRow>
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server"><asp:Image ID="Image3" runat="server" ImageUrl="~/Pictures/benign/5.jpg" /></asp:TableCell>
-                <asp:TableCell runat="server">Benign Class</asp:TableCell>
-            </asp:TableRow>
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server"><asp:Image ID="Image4" runat="server" ImageUrl="~/Pictures/benign/8.jpg" /></asp:TableCell>
-                <asp:TableCell runat="server">Benign Class</asp:TableCell>
-            </asp:TableRow>
-
-
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server"><asp:Image ID="Image5" runat="server" ImageUrl="~/Pictures/malignant/110.jpg" /></asp:TableCell>
-                <asp:TableCell runat="server">Malignant Class</asp:TableCell>
-            </asp:TableRow>
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server"><asp:Image ID="Image6" runat="server" ImageUrl="~/Pictures/malignant/129.jpg" /></asp:TableCell>
-                <asp:TableCell runat="server">Malignant Class</asp:TableCell>
-            </asp:TableRow>
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server"><asp:Image ID="Image7" runat="server" ImageUrl="~/Pictures/malignant/139.jpg" /></asp:TableCell>
-                <asp:TableCell runat="server">Malignant Class</asp:TableCell>
-            </asp:TableRow>
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server"><asp:Image ID="Image8" runat="server" ImageUrl="~/Pictures/malignant/156.jpg" /></asp:TableCell>
-                <asp:TableCell runat="server">Malignant Class</asp:TableCell>
-            </asp:TableRow>
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server"><asp:Image ID="Image9" runat="server" ImageUrl="~/Pictures/malignant/93.jpg" /></asp:TableCell>
-                <asp:TableCell runat="server">Malignant Class</asp:TableCell>
-            </asp:TableRow>
-           
-    </asp:Table>
-
-    
-    
+    <div class="container">
+        <h1>Graph</h1>
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/Pictures/graph1.jpeg" />
+    </div>
 </asp:Content>

@@ -131,7 +131,9 @@
     <Content Include="Pictures\benign\2.jpg" />
     <Content Include="Pictures\benign\5.jpg" />
     <Content Include="Pictures\benign\8.jpg" />
+    <Content Include="Pictures\flowchart.jpeg" />
     <Content Include="Pictures\flower.jpg" />
+    <Content Include="Pictures\graph1.jpeg" />
     <Content Include="Pictures\malignant\110.jpg" />
     <Content Include="Pictures\malignant\129.jpg" />
     <Content Include="Pictures\malignant\139.jpg" />

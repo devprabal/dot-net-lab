@@ -1,6 +1,6 @@
 import sys
 filename = sys.argv[1]
-newFilename = "C:\\Users\\devpogi\\source\\repos\\"+filename
+newFilename = "D:\\__PROJECT\\Dot\ Net\ Lab\\"+filename
 print(filename)
 print(newFilename)
 with open(newFilename) as f:

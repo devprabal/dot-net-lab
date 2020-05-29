@@ -34,10 +34,10 @@ namespace BasicWebApp
 
 
                     var psi = new ProcessStartInfo();
-                    psi.FileName = @"C:\Users\devpogi\AppData\Local\Programs\Python\Python37-32\python.exe";
+                    psi.FileName = @"C:\Users\admin\AppData\Local\Programs\Python\python.exe";
 
                     // 2) Provide script and arguments
-                    var script = @"C:\Users\devpogi\source\repos\pyAnswer.py";
+                    var script = @"D:\\__PROJECT\\Dot\ Net\ Lab\\pyAnswer.pyAnswer.py";
                     var filename = "helloworld.txt";
                     
 
@@ -57,6 +57,7 @@ namespace BasicWebApp
                     {
                         errors = process.StandardError.ReadToEnd();
                         results = process.StandardOutput.ReadToEnd();
+                    
                     }
 
                     // 5) Display output
