@@ -13,23 +13,17 @@
     
     <div class="container-fluid">
 
-    <div class="jumbotron text-center mdb-color lighten-2 white-text mx-2 mb-5"><h1><%: Title %></h1></div>
-    
-    <div class="jumbotron">
+    <div class="jumbotron text-center mdb-color lighten-2 white-text mx-2 mb-5" style="position:relative;z-index: 2;box-shadow: 0 8px 16px -6px black;"><h1><%: Title %></h1></div>
+        <hr />
+
+    <div class="jumbotron" style="position:relative;z-index: 2;box-shadow: 0 8px 16px -6px black;">
     <h1 class="display-4">Description</h1>
     <p class="lead">The site aims to predict whether a certain input image is classified under Malignant, or Benign class of Skin Cancer. The objective is to propose a system that detects skin cancer lesions using the Convolution Neural Network. The diagnosing methodology uses Image processing and deep learning model. The dermoscopy image of skin cancer taken, undergone various techniques to remove the noise and picture resolution.</p>
     </div>
-    <br />
-    <br />
-    <p>You can include the CNN model image used to train the network. Use Netron to make the CNN model image in one click.</p>
-    <p>Add some dataset pics along with their class labels.</p>
-    <p>Add training and validation losses graphs</p>
-    <p>Use this area to link to research papers and literatures, wikipedia stuffs etc.</p>
-    
      
-    <p>&nbsp;</p>
-
-    <div class="jumbotron">
+    
+    <hr />
+    <div class="jumbotron" style="position:relative;z-index: 2;box-shadow: 0 8px 16px -6px black;">
         <h1>Sample Classifications</h1>
         <table class="table table-striped table-dark">
         <thead>
@@ -64,9 +58,20 @@
         </table>
     </div>
     </div>
+    <hr />
 
-    <div class="container">
+    <div class="jumbotron" style="position:relative;z-index: 2;box-shadow: 0 8px 16px -6px black;">
+    <h2 class="display-4">Dataset Description</h2>
+    <p class="lead">The data is taken from ISIC-Archive : <a href="https://www.kaggle.com/fanconic/skin-cancer-malignant-vs-benign">Dataset</a></p>
+    </div>
+
+    <div class="container-fluid text-center">
+        <h1>Model Flowchart</h1>
+        <asp:Image ID="Image2" runat="server" ImageUrl="~/Pictures/modelFlow.jpeg" />
+        <hr />
+
         <h1>Graph</h1>
         <asp:Image ID="Image1" runat="server" ImageUrl="~/Pictures/graph1.jpeg" />
+        <hr />
     </div>
 </asp:Content>

@@ -205,6 +205,7 @@
     <Content Include="Pictures\malignant\139.jpg" />
     <Content Include="Pictures\malignant\156.jpg" />
     <Content Include="Pictures\malignant\93.jpg" />
+    <Content Include="Pictures\modelFlow.jpeg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

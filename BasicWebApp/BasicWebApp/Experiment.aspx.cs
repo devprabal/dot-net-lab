@@ -33,11 +33,11 @@ namespace BasicWebApp
                     Label2.Text = "Your Uploaded Image";
 
 
-                    var psi = new ProcessStartInfo();
-                    psi.FileName = @"C:\Users\admin\AppData\Local\Programs\Python\python.exe";
+                    var psi = new ProcessStartInfo(); 
+                    psi.FileName = @"C:\Users\admin\AppData\Local\Programs\Python\Python38-32\python.exe";
 
                     // 2) Provide script and arguments
-                    var script = @"D:\\__PROJECT\\Dot\ Net\ Lab\\pyAnswer.pyAnswer.py";
+                    var script = @"D:\__PROJECT\dotNetLab\dot-net-lab\pyAnswer.py";
                     var filename = "helloworld.txt";
                     
 
@@ -61,11 +61,10 @@ namespace BasicWebApp
                     }
 
                     // 5) Display output
-                    Response.Write("ERRORS:");
-                    Response.Write(errors);
-                    Response.Write("");
-                    Response.Write("Results:");
-                    Response.Write(results);
+                    Label3.Text = results;
+
+
+                    
 
 
                 }
@@ -85,6 +84,8 @@ namespace BasicWebApp
                 Label2.Visible = false;
                 Image1.Visible = false;
                 Image1.ImageUrl = "";
+                Label3.Text = "";
+                
             }
         }
     }
