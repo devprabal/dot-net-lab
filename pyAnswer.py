@@ -9,7 +9,17 @@ with open(newFilename) as f:
     #ML code
     print(text)
     
-# ML Code (We will discuss tomorrow
+# ML Code (We will discuss tomorrow)
+
+from skimage.io import imread
+import keras
+import numpy as np
+
+from keras.models import Sequential
+from keras.layers import (  Dense,
+                            Flatten,
+                            LeakyReLU)
+from keras.applications import  VGG19 
 
 model = Sequential()
 model.add(VGG19(include_top=False, weights='imagenet', input_shape= ( 224, 224, 3)))
