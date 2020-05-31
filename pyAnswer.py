@@ -42,4 +42,4 @@ with open(newFilename) as f:
 # if(mel>ben):
 #     print('Malignant')
 # else:
-    print('Benign')
+#     print('Benign')
