@@ -37,25 +37,29 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
+        <%-- navbar navbar-inverse navbar-fixed-top  --%>
+        <div class="navbar navbar " >
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Skin Cancer</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Experiment">Experiment</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                
+                    
+                
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav" style="position:absolute;left:50%;transform:translateX(-50%);">
+                        <li><h2><a runat="server" href="~/"><span class="glyphicon glyphicon-home"></span>&nbsp Skin Cancer</a></h2></li>
+                        <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                        <%--<li><h2><a runat="server" href="~/">Home&nbsp</a></h2></li>--%>
+                        <li><h2><a runat="server" href="~/About"><span class="glyphicon glyphicon-question-sign"></span>&nbsp About&nbsp&nbsp&nbsp</a></h2></li>
+                        <li><h2><a runat="server" href="~/Experiment"><span class="glyphicon glyphicon-wrench"></span>&nbsp Experiment&nbsp&nbsp&nbsp</a></h2></li>
+                        <li><h2><a runat="server" href="~/Contact"><span class="glyphicon glyphicon-envelope"></span>&nbsp Contact&nbsp&nbsp&nbsp</a></h2></li>
                     </ul>
                 </div>
+            </div>
             </div>
         </div>
         <div class="container body-content">
