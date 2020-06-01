@@ -13,7 +13,7 @@
     
     <div class="container-fluid">
 
-    <div class="jumbotron text-center mdb-color lighten-2 white-text mx-2 mb-5" style="position:relative;z-index: 2;box-shadow: 0 8px 16px -6px blue;"><h1><%: Title %></h1></div>
+    <div class="jumbotron text-center mdb-color lighten-2 white-text mx-2 mb-5" style="position:relative;z-index: 2;box-shadow: 0 8px 16px -6px red;"><h1><%: Title %></h1></div>
         <hr />
 
     <div class="jumbotron" style="position:relative;z-index: 2;box-shadow: 0 8px 16px -6px blue;">
@@ -23,7 +23,7 @@
      
     
     <hr />
-    <div class="jumbotron" style="position:relative;z-index: 2;box-shadow: 0 8px 16px -6px blue;">
+    <div class="jumbotron" style="position:relative;z-index: 2;box-shadow: 0 8px 16px -6px red;">
         <h1>Sample Classifications</h1>
         <table class="table table-striped table-dark">
         <thead>
