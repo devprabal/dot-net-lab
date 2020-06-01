@@ -1,7 +1,7 @@
 import sys
 filename = sys.argv[1]
-#newFilename = "D:\\__PROJECT\\dotNetLab\\dot-net-lab\\"+filename
-newFilename = "C:\Users\HP\Documents\GitHub\dot-net-lab\model_ann_3x2_architecture.json"
+newFilename = "D:\\__PROJECT\\dotNetLab\\dot-net-lab\\"+filename
+#newFilename = "C:\Users\HP\Documents\GitHub\dot-net-lab\model_ann_3x2_architecture.json"
 # print(filename)
 print(newFilename)
 with open(newFilename) as f:

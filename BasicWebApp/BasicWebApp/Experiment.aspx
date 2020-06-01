@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
 
-    <div class="jumbotron" style="position: relative; z-index: 2; box-shadow: 0 8px 16px -6px black;">
+    <div class="jumbotron" style="position: relative; z-index: 2; box-shadow: 0 8px 16px -6px blue;">
         <h2 class="display-4">Experiment</h2>
         <br />
         <hr />
@@ -47,7 +47,7 @@
                 <hr />
                 <div class="container-fluid jumbotron">
                     
-                    <h2 id="result" runat="server">Result : </h2>
+                    <h2 id="result" runat="server" Visible="false">Result : </h2>
                     <h3>
                     <asp:Label ID="Label3" runat="server" Text="" Visible="true"></asp:Label>
                     </h3>

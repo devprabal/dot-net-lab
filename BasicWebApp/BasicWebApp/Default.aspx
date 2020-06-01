@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" style="position: relative; z-index: 2; box-shadow: 0 8px 16px -6px blue;">
         <h1>Skin Cancer Detection and Classification</h1>
         <p class="lead">Skin Cancer is a disease many people suffer from without being aware of, at the initial stages.</p>
         <p class="lead">Cancer begins when healthy cells change and grow out of control, forming a mass called a tumor. A tumor can be malignant or benign. </p>
@@ -12,15 +12,13 @@
     <div class="row">
         <div class="col-md-6">
             <h2>Introduction</h2>
-            <p>Introduction: About more than a million skin cancer cases occurred in 2018 globally [1]. Skin cancer
+            <p>Introduction: About more than a million skin cancer cases occurred in 2018 globally. Skin cancer
 is one of the fastest-growing diseases in the world. Skin cancer occurs mainly due to
 the exposure of ultraviolet radiation emitted from the Sun. Considering the limited
 availability of the resources, early detection of skin cancer is highly important. Accurate
 diagnosis and feasibility of detection are vital in general for skin cancer prevention
 policy. Skin cancer detection in early phases is a challenge for even the dermatologist.
-In recent times, we have witnessed extensive use of deep learning in both supervised and unsupervised learning problems. One of these models is Convolution Neu-
-2
-ral Networks (CNN) which has outperformed all others for object recognition and object classification tasks. CNNs eliminate the obligation of manually handcrafting features by learning highly discriminative features while being trained end-to-end in a supervised manner
+In recent times, we have witnessed extensive use of deep learning in both supervised and unsupervised learning problems. One of these models is Convolution Neural Networks (CNN) which has outperformed all others for object recognition and object classification tasks. CNNs eliminate the obligation of manually handcrafting features by learning highly discriminative features while being trained end-to-end in a supervised manner
 
             </p>
 

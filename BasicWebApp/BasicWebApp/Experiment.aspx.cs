@@ -38,8 +38,8 @@ namespace BasicWebApp
 
                     // 2) Provide script and arguments
                     var script = @"D:\__PROJECT\dotNetLab\dot-net-lab\pyAnswer.py";
-                    var filename = "helloworld.txt";
-                    
+                    //var filename = "helloworld.txt";
+                    var filename = fn;
 
                     psi.Arguments = $"\"{script}\" \"{filename}\"";
 
@@ -61,6 +61,7 @@ namespace BasicWebApp
                     }
 
                     // 5) Display output
+                    result.Visible = true;
                     Label3.Text = results;
 
 
@@ -70,7 +71,7 @@ namespace BasicWebApp
                 }
                 catch (Exception ex)
                 {
-                    //Response.Write("Error: " + ex.Message);
+                    Response.Write("Error: " + ex.Message);
                     //Note: Exception.Message returns a detailed message that describes the current exception. 
                     //For security reasons, we do not recommend that you return Exception.Message to end users in 
                     //production environments. It would be better to put a generic error message. 
